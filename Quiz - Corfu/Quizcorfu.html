@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Corfu</title>
+    <script src="Quizcorfu.js"></script>
+    <link rel="stylesheet" href="Quizcorfu.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Πόσο καλά γνωρίζεις την Κέρκυρα;</h1>
+        <h3>Τεστ γνώσεων με δόσεις ψυχαγωγίας</h3>
+    </div>
+    <div class="container">
+            <div class="Question">
+                             
+                <h1>1) Ποία είναι η παλαιότερη ταινία από τις παρακάτω που γυρίστηκαν στην Κέρκυρα, και η οποία έγινε έγχρωμη προσφάτως;</h1>
+                <div class="text">
+                    <button id="myBtn1" onclick="falso()">Η Κόμισσα της Κέρκυρας</button>
+                    <button id="myBtn2" onclick="falso()">Ένας άφραγκος Ωνάσης</button>
+                    <button id="myBtn3" onclick="falso()">Η αρχόντισσα και ο αλήτης</button>
+                    <button id="myBtn4" onclick="vero()">Ραντεβού στην Κέρκυρα</button>
+                    <p id="showText1"></p>
+                    <img src="../img/correct.png" id="imageCorrect1">
+                    <img src="../img/falso.png" id="imageWrong1">
+                </div>
+            </div>
+
+            <div class="Question">
+                          
+                <h1>2) Ποίος έλληνας ηθοποιός συμμετείχε στις δύο απο αυτές;</h1>
+                <div class="text">
+                    <button id="myBtn5" onclick="showActorFalse()">Λυκούργος Καλλέργης</button>
+                    <button id="myBtn6" onclick="showActorFalse()">Κώστας Βουτσάς</button>
+                    <button id="myBtn7" onclick="showActorFalse()">Ανδρέας Μπάρκουλης</button>
+                    <button id="myBtn8" onclick="showActorTrue()">Αλέκος Αλεξανδράκης</button>
+                    <p id="showText2"></p>
+                    <img src="../img/correct.png" id="imageCorrect2">
+                    <img src="../img/falso.png" id="imageWrong2">
+                </div>
+            </div>
+
+            <div class="Question">
+                                
+                <h1>3) Ποίος έλληνας συνθέτης επιμελήθηκε την μουσική επένδυση στις 2 από τις τέσσερις ταινίες;</h1>
+                <div class="text">
+                    <button id="myBtn9" onclick="showComposerFalse()">Μάνος Χατζιδάκης</button>
+                    <button id="myBtn10" onclick="showComposerFalse()">Νίκος Μαμαγκάκης</button>
+                    <button id="myBtn11" onclick="showComposerFalse()">Γιάννης Σπανός</button>
+                    <button id="myBtn12" onclick="showComposerTrue()">Γιώργος Κατσαρός</button>
+                    <p id="showText3"></p>
+                    <img src="../img/correct.png" id="imageCorrect3">
+                    <img src="../img/falso.png" id="imageWrong3">
+                </div>
+            </div> 
+
+            <div class="Question">
+              
+                <h1>4) Διαφήμιση κρασιού που προβλήθηκε την περίοδο 1986-1990 με σκηνές από την Κέρκυρα και μουσική επένδυση από την ταινία 'Μπέττυ Μπλου'. Ποίο ήταν το διαφημιζόμενο κρασί; Αν το βρεις, θα το δεις!</h1>
+                <div class="text">
+                    <button id="myBtn13" onclick="showAdvertFalse()">Δεμέστιχα</button>
+                    <button id="myBtn14" onclick="showAdvertFalse()">Apelia</button>
+                    <button id="myBtn15" onclick="showAdvertTrue()">Μπουτάρη</button>
+                    <p id="showText4"></p>
+                    <img src="../img/correct.png" id="imageCorrect4">
+                    <img src="../img/falso.png" id="imageWrong4">
+                </div>
+            </div>
+
+            <div class="Question">
+       
+                <h1>5) Ποίος υποδύεται τον James Bond στην ταινία του 1981 με τον τίτλο <br>"For your eyes only"; Αρκεί και το επώνυμο μόνο.</h1>
+                <div class="text">
+                    <input id="myInput1" placeholder="Πληκτρολόγησε">
+                    <button id="myBtn16" onclick="showBond()">Απάντηση</button>
+                    <p id="showText5"></p>
+                    <img src="../img/correct.png" id="imageCorrect5">
+                    <img src="../img/falso.png" id="imageWrong5">
+                </div>
+            </div>        
+
+            <div class="Question">
+
+                <h1>6) Στην προαναφερθείσα ταινία σκηνές δράσης γυρίστηκαν στην Κέρκυρα, στο Παλαιό ή στο Νέο Φρούριο;</h1>
+                <div class="text">
+                    <input id="myInput2" placeholder="Πληκτρολόγησε">
+                    <button id="myBtn17" onclick="showCastle()">Απάντηση</button>
+                    <p id="showText6"></p>
+                    <img src="../img/correct.png" id="imageCorrect6">
+                    <img src="../img/falso.png" id="imageWrong6">
+                </div>
+            </div>     
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 90's</title>
+    <link rel="stylesheet" href="Quiz90s.css">
+    <script src="Quiz90s.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <div class="header"><h1>1) Στην τηλεοπτική σειρά Απαράδεκτοι, η κατοικία τους στο Λυκαβηττό βρισκόταν στην οδό Αδάμαντος, σε ποίο νούμερο;</h1></div>
+            <div class="text">
+                <button id="myBtn1" onclick="correct1()">Αδάμαντος 4</button>
+                <button id="myBtn2" onclick="falso1()">Αδάμαντος 2</button>
+                <button id="myBtn3" onclick="falso1()">Αδάμαντος 8</button>
+                <button id="myBtn4" onclick="falso1()">Αδάμαντος 14</button>
+                <button id="tryAgain1" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato1"></p>
+        </div>
+
+        <div class="question">
+            <div class="header"><h1>2) Τηλεοπτική διαφήμιση της περιόδου 1990-1993, στο τραγούδι η Λία Βίσση τραγουδάει για το Αλεύρι..</h1></div>
+            <div class="text" id="text2">
+                <button onclick="falso2()">Αλεύρι Αλλατίνη</button>
+                <button onclick="correct2()">Αλεύρι 100</button>
+                <button onclick="falso2()">Αλεύρι Παπαδοπούλου</button>
+                <button onclick="falso2()">Αλεύρι Ελαΐς</button>
+                <button id="tryAgain2" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato2"></p>
+        </div>          
+
+        <div class="question">
+            <div class="header"><h1>3) Το τηλεπαιχνίδι "Κόντρες" που προβάλλονταν στο Mega Channel, είχε παρουσιαστή τον..</h1></div>
+            <div class="text">
+                <button id="myBtn9" onclick="falso3()">Γιάννη Ζουγανέλη</button>
+                <button id="myBtn10" onclick="falso3()">Γιώργο Πολυχρονίου</button>
+                <button id="myBtn11" onclick="correct3()">Βλάσση Μπονάτσο</button>
+                <button id="myBtn12" onclick="falso3()">Σπύρο Παπαδόπουλο</button>
+                <button id="tryAgain3" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato3"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>4) Ο Max (by Bara) ήταν ένα σύντομο διαφημιστικό animation που προβάλλονταν κατά την διάρκεια των διαφημίσεων,
+                τύπος με καπέλο ντυμένος στα λευκα, σε ποίο κανάλι προβάλλονταν;</h1></div>
+            <div class="text">
+                <button id="myBtn13" onclick="falso4()">Mega Channel</button>
+                <button id="myBtn14" onclick="falso4()">Ant1</button>
+                <button id="myBtn15" onclick="falso4()">Star Channel</button>
+                <button id="myBtn16" onclick="correct4()">Περισσότερα από ένα κανάλια</button>
+                <button id="tryAgain4" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato4"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>5) Κατά την δεκαετία του 90', ήταν της μόδας οι μεξικάνικες σαπουνόπερες. Σε ποία από τις παρακάτω η πρωταγωνίστρια ήταν τυφλή;</h1></div>
+            <div class="text">
+                <button id="myBtn17" onclick="falso5()">Παολίνα</button>
+                <button id="myBtn18" onclick="correct5()">Εσμεράλντα</button>
+                <button id="myBtn19" onclick="falso5()">Μαριμάρ</button>
+                <button id="myBtn20" onclick="falso5()">Ροζαλίντα</button>
+                <button id="tryAgain5" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato5"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>6) Στην δεκαετία του 80' μεσουρανούσε το Amstrad και το Atari, στην δεκαετία του 90', η Sega και η Nintendo.
+                Ποία από τα παρακάτω ζευγάρια είναι σωστά; Αν βρείτε το ένα, δώρο το άλλο..</h1></div>
+            <div class="text">
+                <button id="myBtn21" onclick="correct6()">Super Mario - Nintendo</button>
+                <button id="myBtn22" onclick="falso6()">Super Mario - Sega Master System</button>
+                <button id="myBtn23" onclick="falso6()">Sonic ο σκαντζόχοιρος - Nintendo</button>
+                <button id="myBtn24" onclick="correct6()">Sonic ο σκαντζόχοιρος - Sega Master System</button>
+                <button id="tryAgain6" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato6"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>7) Οι ήρωες της Μάρβελ "X-men" και "Spiderman", κυκλοφόρησαν από την Μαμούθ Κόμικ και Καμπάνας αντίστοιχα.
+                Στα μέσα των 90's την σκυτάλη για την κυκλοφορία τους πήραν οι εκδόσεις..</h1></div>
+            <div class="text">
+                <button id="myBtn25" onclick="falso7()">Anubis</button>
+                <button id="myBtn26" onclick="correct7()">Modern Times</button>
+                <button id="myBtn27" onclick="falso7()">Οξύ</button>
+                <button id="myBtn28" onclick="falso7()">Polaris</button>
+                <button id="tryAgain7" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato7"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>8) Τηλεοπτική διαφήμιση γιαουρτιού Total με μουσική σύνθεση του..</h1></div>
+            <div class="text">
+                <button id="myBtn29" onclick="falso8()">Βαγγέλη Παπαθανασίου</button>
+                <button id="myBtn30" onclick="falso8()">Yanni</button>
+                <button id="myBtn31" onclick="correct8()">Σταμάτη Σπανουδάκη</button>
+                <button id="myBtn32" onclick="falso8()">Ντέμη Ρούσσου</button>
+                <button id="tryAgain8" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato8"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>9) Τηλεπαιχνίδι των 90's από την συχνότητα του Αντ1..</h1></div>
+            <div class="text">
+                <button id="myBtn33" onclick="correct9()">Ο καλύτερος κερδίζει</button>
+                <button id="myBtn34" onclick="falso9()">Ο χειρότερος κερδίζει</button>
+                <button id="myBtn35" onclick="falso9()">Ο χειρότερος αξίζει</button>
+                <button id="myBtn36" onclick="falso9()">Ο καλύτερος σφυρίζει</button>
+                <button id="tryAgain9" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato9"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>10) Επανάσταση στο χώρο των λογισμικών έφεραν τα Windows 95, ένα πολύ οικείο interface για τους χρήστες. Ποία ήταν η προηγούμενη έκδοση;</h1></div>
+            <div class="text">
+                <button id="myBtn37" onclick="falso10()">Windows 2.1</button>
+                <button id="myBtn38" onclick="correct10()">Windows 3.1</button>
+                <button id="myBtn39" onclick="falso10()">Windows 4.1</button>
+                <button id="myBtn40" onclick="falso10()">Windows 5.1</button>
+                <button id="tryAgain10" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato10"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>11) Ποίο από τα παρακάτω αστυνομικά μυθιστορήματα του Γιάννη Μαρή, έγινε τηλεοπτική διασκευή την δεκαετία του 90';</h1></div>
+            <div class="text">
+                <button id="myBtn41" onclick="falso11()">Ο θάνατος του Τιμόθεου Κώνστα</button>
+                <button id="myBtn42" onclick="falso11()">Η εξαφάνιση του Τζων Αυλακιώτη</button>
+                <button id="myBtn43" onclick="correct11()">Μια γυναίκα από το παρελθόν</button>
+                <button id="myBtn44" onclick="falso11()">Ζήτημα ζωής και θανάτου</button>
+                <button id="tryAgain11" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato11"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>12) Σε ποίο από τα παρακάτω σήριαλ την μουσική επένδυση των τίτλων υπέγραψε ο Γιώργος Χατζηνάσιος;</h1></div>
+            <div class="text">
+                <button id="myBtn45" onclick="falso12()">Ταύρος με Τοξότη</button>
+                <button id="myBtn46" onclick="correct12()">Τμήμα Ηθών</button>
+                <button id="myBtn47" onclick="falso12()">Ανατομία ενός εγκλήματος</button>
+                <button id="myBtn48" onclick="falso12()">Οι Δρόμοι της Πόλης</button>
+                <button id="tryAgain12" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato12"></p>
+        </div> 
+
+
+
+
+    </div>
+</body>
+</html>

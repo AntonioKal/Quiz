@@ -1,0 +1,56 @@
+*{box-sizing: border-box;
+padding:0;
+margin:0
+}
+
+body{
+    background-color: #262626;
+}
+
+.header > h1{
+    background-color: #ffc000;
+    text-align: center;
+    width:590px;
+    margin:0 auto;
+    border-radius: 10px;
+    font-size:27px;
+}
+
+button{
+    background-color: #ff4900;
+    margin:10px auto;
+    padding:20px;
+    font-size:1rem;
+    width:250px;
+    border-radius:10px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #ff4050;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+.question{
+    width:50%;
+    margin:150px auto;
+
+}
+
+.text{
+    display:flex;
+    flex-wrap: wrap;
+    margin:30px auto;
+}
+
+[id^="risultato"]{
+    font-size:3rem;
+    position:absolute;
+    color:pink;
+}
+
+[id^='tryAgain']{
+    display:none;
+}
