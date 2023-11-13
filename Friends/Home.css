@@ -72,7 +72,7 @@ transform:rotate(20deg);
 @media (max-width:720px){
 
 .menu{
-width:250px;
+width:260px;
 height:auto;
 display:flex;
 align-items: center;
