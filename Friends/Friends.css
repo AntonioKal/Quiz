@@ -107,7 +107,7 @@ border-radius:50px;
 
 #secret{
 display:none;
-width: 70%;
+width: 40%;
 border-radius:50px;
 border:7px solid #ec7263;
 margin: 25px auto;
@@ -197,6 +197,13 @@ button{
   width: 80%;
   border-radius:50px;
   margin-left:25px;
+}
 
+#secret{
+width: 70%;
+}
+
+#numero{
+font-size:30px;
 }}
 
