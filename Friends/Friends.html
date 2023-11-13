@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="Friends.css">
+    <script src="Friends.js"></script>
+</head>
+<body>
+    <h2>Dancing Queens</h2>
+    <audio controls id="audio" autoplay>
+    <source src="Sueno de amor.mp3" type="audio/mp3">
+    </audio>
+    <div class="container">
+        <div id = 'secret'>
+            <p id="numero"></p>
+        </div>
+        <div class="question">
+            <div class="header"><h1>1) Βρες το λάθος</h1></div>
+            <div class="text">
+                <button id="myBtn1" onclick="falso1()">22 Μαΐου</button>
+                <button id="myBtn2" onclick="falso1()">9 Ιουνίου</button>
+                <button id="myBtn3" onclick="correct1()">23 Μαΐου</button>
+                <button id="myBtn4" onclick="falso1()">10 Απριλίου</button>
+                <button id="tryAgain1" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato1"></p>
+        </div>
+
+        <div class="question">
+            <div class="header"><h1>2) Η ακόλουθη ζωγραφιά θα μπορούσε να έχει τον τίτλο:</h1></div>
+            <div class="text" id="text2">               
+                <button id="myBtn5" onclick="falso2()">Before</button>
+                <button id="myBtn6" onclick="correct2()">After</button>
+                <button id="tryAgain2" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <img src="../Friends/After.jpg">
+            <p id="risultato2"></p>
+        </div>          
+
+        <div class="question">
+            <div class="header"><h1>3) Αληθεύει ότι ο πίνακας έργου τέχνης 'after' φιλοτεχνήθηκε μέσα σε διάστημα 30 λεπτών;</h1></div>
+            <div class="text">
+                <button id="myBtn7" onclick="falso3()">Όχι</button>
+                <button id="myBtn8" onclick="correct3()">Ναι</button>
+                <button id="tryAgain3" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato3"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>4) Ποία μέρα ξεκίνησε η επαφή σε παράλληλη διάσταση;</h1></div>
+            <div class="text">
+                <button id="myBtn9" onclick="falso4()">Τετάρτη</button>
+                <button id="myBtn10" onclick="correct4()">Τρίτη</button>
+                <button id="tryAgain4" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato4"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>5) Για ποία ιταλική πόλη έγινε λόγος για μελλοντική ξενάγηση;</h1></div>
+            <div class="text">
+                <button id="myBtn11" onclick="correct5()">Νάπολη</button>
+                <button id="myBtn12" onclick="falso5()">Μπέργκαμο</button>
+                <button id="myBtn13" onclick="falso5()">Βενετία</button>
+                <button id="tryAgain5" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato5"></p>
+        </div>   
+
+        <div class="question">
+            <div class="header"><h1>6) Ποίο κορίτσι έχει έφεση στην ταξινόμηση;</h1></div>
+            <div class="text">
+                <button id="myBtn14" onclick="correct6()">Μαριεύα</button>
+                <button id="myBtn15" onclick="falso6()">Πελαγία</button>
+                <button id="tryAgain6" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato6"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>7) Ποίο βιβλίο της Αγκάθα Κρίστι (αγαπημένο μου) πρότεινα για ανάγνωση;</h1></div>
+            <div class="text">
+                <button id="myBtn16" onclick="falso7()">Πτώμα στη βιβλιοθήκη</button>
+                <button id="myBtn17" onclick="falso7()">Ο καρπός του έρωτα</button>
+                <button id="myBtn18" onclick="correct7()">Έγκλημα στο Γκολφ</button>
+                <button id="myBtn19" onclick="falso7()">Μπαλαντέρ του θανάτου</button>
+                <button id="tryAgain7" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato7"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>8) Ποία είναι η χειρότερη ημέρα της εβδομάδος;</h1></div>
+            <div class="text">
+                <button id="myBtn20" onclick="correct8()">Τρίτη</button>
+                <button id="myBtn21" onclick="falso8()">Πέμπτη</button>
+                <button id="myBtn22" onclick="falso8()">Δευτέρα</button>
+                <button id="myBtn23" onclick="falso8()">Κυριακή</button>
+                <button id="tryAgain8" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato8"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>9) Με τι ξαφνιάστηκα περισσότερο;</h1></div>
+            <div class="text" id="text9">
+                <button id="myBtn24" onclick="correct9()">Γνωρίζατε τους Abba</button>
+                <button id="myBtn25" onclick="falso9()">Η Πελαγία δεν ξυπνά με τίποτα όταν κοιμάται</button>
+                <button id="tryAgain9" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato9"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>10) Το τραγούδι 'Sara perche ti amo', τραγουδούν οι:</h1></div>
+            <div class="text" id="text10">
+                <button id="myBtn26" onclick="falso10()">Matia Bazar</button>
+                <button id="myBtn27" onclick="correct10()">Ricchi e poveri</button>
+                <button id="myBtn28" onclick="falso10()">Motowns</button>
+                <button id="tryAgain10" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato10"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>11) Πως λέγεται η ντομάτα στα ναπολετάνικα;</h1></div>
+            <div class="text" id="text11">
+                <button id="myBtn29" onclick="falso11()">Pomodoro</button>
+                <button id="myBtn30" onclick="falso11()">Pomodorino</button>
+                <button id="myBtn31" onclick="correct11()">Pummaro</button>
+                <button id="myBtn32" onclick="falso11()">Domato</button>
+                <button id="tryAgain11" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato11"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>12) Ποία έκδοση cluedo έχω στην κατοχή μου;</h1></div>
+            <div class="text">
+                <button id="myBtn33" onclick="falso12()">2003</button>
+                <button id="myBtn34" onclick="falso12()">1999</button>
+                <button id="myBtn35" onclick="correct12()">1996</button>
+                <button id="myBtn36" onclick="falso12()">2000</button>
+                <button id="tryAgain12" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato12"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>13) Ποιός ζήτησε να 'σπάσει' ο ενικός;</h1></div>
+            <div class="text">
+                <button id="myBtn37" onclick="falso13()">Πελαγία</button>
+                <button id="myBtn38" onclick="falso13()">Αντώνης</button>
+                <button id="myBtn39" onclick="correct13()">Μαριεύα</button>
+                <button id="myBtn40" onclick="falso13()">Μαρία</button>
+                <button id="tryAgain13" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato13"></p>
+        </div> 
+
+        <div class="question">
+            <div class="header"><h1>14) Ποίο γυναικείο όνομα θα έδινα στην μελλοντική μου κόρη;</h1></div>
+            <div class="text">
+                <button id="myBtn41" onclick="falso14()">Δανάη</button>
+                <button id="myBtn42" onclick="correct14()">Χλόη</button>
+                <button id="myBtn43" onclick="falso14()">Κάλλια</button>
+                <button id="tryAgain14" onclick="reset()">Ξαναδοκίμασε</button>
+            </div>
+            <p id="risultato14"></p>
+        </div> 
+        <p id="footer">To be continued</p>
+
+
+    </div>
+</body>
+</html>
